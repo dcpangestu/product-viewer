@@ -35,7 +35,7 @@ export default class ProductSheet extends Component {
             Cookies.set('visitCounter', visitCounter + 1);
         }
 
-        axios.get('http://localhost:9999/')
+        axios.get('https://backend-product-viewer.herokuapp.com/')
         .then(response => {
             if (visitCounter >= 9) {
                 Cookies.set('visitCounter', 1);

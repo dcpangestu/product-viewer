@@ -51,4 +51,4 @@ app.get('/all', (req, res) => {
     });
 });
 
-app.listen(9999, () => console.log('Server running on port 9999!'))
+app.listen(process.env.PORT || 9999, () => console.log('Server running on port 9999!'))
